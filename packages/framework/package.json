@@ -1,9 +1,11 @@
 {
   "name": "@matrix/framework",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc --outDir ./dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/matrix-labx/matrix.git"
