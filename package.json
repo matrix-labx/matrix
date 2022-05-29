@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matrix-labx/matrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matrix-labx/matrix/issues"
+  },
+  "homepage": "https://github.com/matrix-labx/matrix#readme",
+  "devDependencies": {}
+}
