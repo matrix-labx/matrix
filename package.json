@@ -1,19 +1,16 @@
 {
   "private": true,
-  "name": "matrix",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matrix-labx/matrix.git"
+  "packageManager": "pnpm@7.1.6",
+  "scripts": {
+    "build": "pnpm --filter=@matrix/* run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matrix-labx/matrix/issues"
+  "engines": {
+    "node": ">=16.15.0"
   },
-  "homepage": "https://github.com/matrix-labx/matrix#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0"
+  }
 }
