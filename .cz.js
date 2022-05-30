@@ -1,6 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const packages = fs.readdirSync(path.resolve(__dirname, 'packages'))
+const fs = require('fs');
+const path = require('path');
+const packages = fs.readdirSync(path.resolve(__dirname, 'packages'));
 
 /** @type {import('cz-git').CommitizenGitOptions} */
 module.exports = {
@@ -50,6 +50,7 @@ module.exports = {
         'ci:       持续集成 | Changes to our CI configuration files and scripts'
     },
     { value: 'revert', name: 'revert:   回退代码 | Revert to a commit' },
+    { value: 'publish', name: 'publish:  发布版本 | Publish a new version' },
     {
       value: 'chore',
       name:
@@ -86,4 +87,4 @@ module.exports = {
   defaultIssues: '',
   defaultScope: '',
   defaultSubject: ''
-}
+};

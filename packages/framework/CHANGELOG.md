@@ -1,5 +1,11 @@
 # @matrix/framework
 
+## 0.0.3
+
+### Patch Changes
+
+- 修改包名 matrix-web
+
 ## 0.0.2
 
 ### Patch Changes
