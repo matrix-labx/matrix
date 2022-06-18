@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@changesets/cli': ^2.22.0
+      '@types/node': ^17.0.36
       '@typescript-eslint/eslint-plugin': ^5.26.0
       '@typescript-eslint/parser': ^5.26.0
       commitizen: ^4.2.4
@@ -14,6 +15,7 @@ importers:
       typescript: ^4.7.2
     devDependencies:
       '@changesets/cli': 2.22.0
+      '@types/node': 17.0.36
       '@typescript-eslint/eslint-plugin': 5.26.0_hzuh7e2up357pvq3mkokjvu2lq
       '@typescript-eslint/parser': 5.26.0_xztl6dhthcahlo6akmb2bmjmle
       commitizen: 4.2.4
@@ -21,9 +23,6 @@ importers:
       eslint: 8.16.0
       husky: 8.0.1
       typescript: 4.7.2
-
-  packages/framework:
-    specifiers: {}
 
 packages:
 
@@ -261,10 +260,10 @@ packages:
       '@commitlint/execute-rule': 17.0.0
       '@commitlint/resolve-extends': 17.0.0
       '@commitlint/types': 17.0.0
-      '@types/node': 12.20.52
+      '@types/node': 17.0.36
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.1_6cillntahcsoryml2ypha7uh6i
+      cosmiconfig-typescript-loader: 2.0.1_w6gfxie3xfwntbz3mwbbvycbdq
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.7.2
@@ -431,6 +430,10 @@ packages:
 
   /@types/node/12.20.52:
     resolution: {integrity: sha512-cfkwWw72849SNYp3Zx0IcIs25vABmFh73xicxhCkTcvtZQeIez15PpwQN8fY3RD7gv1Wrxlc9MEtfMORZDEsGw==}
+    dev: true
+
+  /@types/node/17.0.36:
+    resolution: {integrity: sha512-V3orv+ggDsWVHP99K3JlwtH20R7J4IhI1Kksgc+64q5VxgfRkQG8Ws3MFm/FZOKDYGy9feGFlZ70/HpCNe9QaA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -830,16 +833,16 @@ packages:
     resolution: {integrity: sha512-SmmCYnOniSsAa9GqWOeLqc179lfr5TRu5b4QFDkbsrJ5TZjPJx85wtOr3zn+1dbeNiXDKGPbZ72IKbPhLXh/Lg==}
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.1_6cillntahcsoryml2ypha7uh6i:
+  /cosmiconfig-typescript-loader/2.0.1_w6gfxie3xfwntbz3mwbbvycbdq:
     resolution: {integrity: sha512-B9s6sX/omXq7I6gC6+YgLmrBFMJhPWew7ty/X5Tuwtd2zOSgWaUdXjkuVwbe3qqcdETo60+1nSVMekq//LIXVA==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 12.20.52
+      '@types/node': 17.0.36
       cosmiconfig: 7.0.1
-      ts-node: 10.8.0_6cillntahcsoryml2ypha7uh6i
+      ts-node: 10.8.0_w6gfxie3xfwntbz3mwbbvycbdq
       typescript: 4.7.2
     transitivePeerDependencies:
       - '@swc/core'
@@ -1335,6 +1338,17 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
+  /glob/7.2.3:
+    resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.1.2
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: true
+
   /global-dirs/0.1.1:
     resolution: {integrity: sha512-NknMLn7F2J7aflwFOlGdNIuCDpN3VGoSoB+aap3KABFWbHVn1TCgFC+np23J8W2BiZbjfEw3BFBycSMv1AFblg==}
     engines: {node: '>=4'}
@@ -1464,7 +1478,7 @@ packages:
     dev: true
 
   /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -1498,7 +1512,7 @@ packages:
     dev: true
 
   /is-arrayish/0.2.1:
-    resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
+    resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
     dev: true
 
   /is-ci/3.0.1:
@@ -1515,12 +1529,12 @@ packages:
     dev: true
 
   /is-extglob/2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
     dev: true
 
   /is-fullwidth-code-point/2.0.0:
-    resolution: {integrity: sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=}
+    resolution: {integrity: sha512-VHskAKYM8RfSFXwee5t5cbN5PZeq1Wrh6qd5bkyiXIf6UQcN6w/A0eXM9r6t8d+GYOh+o6ZhiEnb88LN/Y8m2w==}
     engines: {node: '>=4'}
     dev: true
 
@@ -1542,7 +1556,7 @@ packages:
     dev: true
 
   /is-plain-obj/1.1.0:
-    resolution: {integrity: sha1-caUMhCnfync8kqOQpKA7OfzVHT4=}
+    resolution: {integrity: sha512-yvkRyxmFKEOQ4pNXCmJG5AEQNlXJS5LaONXo5/cLdTZdWvsZ1ioJEonLGAosKlMWE8lwUy/bJzMjcw8az73+Fg==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -1554,7 +1568,7 @@ packages:
     dev: true
 
   /is-utf8/0.2.1:
-    resolution: {integrity: sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=}
+    resolution: {integrity: sha512-rMYPYvCzsXywIsldgLaSoPlw5PfoB/ssr7hY4pLfcodrA5M/eArza1a9VmTiNIBNMjOGr1Ow9mTyU2o69U6U9Q==}
     dev: true
 
   /is-windows/1.0.2:
@@ -1563,7 +1577,7 @@ packages:
     dev: true
 
   /isexe/2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
   /js-tokens/4.0.0:
@@ -1598,7 +1612,7 @@ packages:
     dev: true
 
   /jsonfile/4.0.0:
-    resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}
+    resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
       graceful-fs: 4.2.10
     dev: true
@@ -2071,7 +2085,7 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.1.4
+      glob: 7.2.3
     dev: true
 
   /run-async/2.4.1:
@@ -2313,7 +2327,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.8.0_6cillntahcsoryml2ypha7uh6i:
+  /ts-node/10.8.0_w6gfxie3xfwntbz3mwbbvycbdq:
     resolution: {integrity: sha512-/fNd5Qh+zTt8Vt1KbYZjRHCE9sI5i7nqfD/dzBBRDeVXZXS6kToW6R7tTU6Nd4XavFs0mAVCg29Q//ML7WsZYA==}
     hasBin: true
     peerDependencies:
@@ -2332,7 +2346,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 12.20.52
+      '@types/node': 17.0.36
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3

@@ -1,3 +1,7 @@
-export default function sayHi(message: string) {
-  console.log(`hi: ${message}`);
-}
+import Ctx from './core/context';
+
+export type Context = Ctx;
+
+export * from './core/application';
+export * from './interface';
+export * from './decorator';
